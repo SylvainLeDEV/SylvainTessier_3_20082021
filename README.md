@@ -1,4 +1,4 @@
-![Oh my food](docs/assets/Ohmyfood/images/logo/ohmyfood@2x.svg)
+![Oh my food](docs/assets/Ohmyfood/images/logo/ohmyfood.png)
 # Identité graphique
 ## *Police*
 
