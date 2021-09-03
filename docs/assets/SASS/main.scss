@@ -1,0 +1,11 @@
+// Variables, function, mixins et %placeholders pour les extensions (si on veux en utilser)
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+
+//Layout est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est réutilisable,
+// par exemple un header pour les mises en page de grande taille ou un footer ;
+@import "layout/form";
+@import "layout/header";
+@import "layout/nav";
+
