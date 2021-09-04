@@ -62,29 +62,12 @@ td, th {
   text-decoration: none;
 }
 
-header {
-  width: 100%;
-  background: #fff;
-  -webkit-box-shadow: 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
-  box-shadow: 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
-}
-header .header__logo {
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-* {
-  font-family: "Roboto", sans-serif;
-}
-
 .location {
   background: #EAEAEA;
   -webkit-box-shadow: inset 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
   box-shadow: inset 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
 }
-.location .location__city {
+.location .location-city {
   height: 4rem;
   display: flex;
   flex-direction: row;
@@ -93,7 +76,7 @@ header .header__logo {
   width: 100%;
   font-size: 1.2rem;
 }
-.location .location__city p {
+.location .location-city p {
   margin-left: 10px;
 }
 
@@ -104,7 +87,7 @@ header .header__logo {
   flex-direction: column;
   align-items: center;
 }
-.research .research__title {
+.research .research-title {
   text-align: center;
   width: 70%;
   margin: 0 auto;
@@ -124,15 +107,15 @@ header .header__logo {
   display: flex;
   flex-direction: column;
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto;
   align-items: flex-start;
 }
-.functioning .functioning__title h2 {
+.functioning .functioning-title h2 {
   font-weight: 700;
   font-size: 1.3rem;
 }
 
-.cards__container {
+.container {
   width: 100%;
 }
 
@@ -146,11 +129,12 @@ header .header__logo {
   position: relative;
 }
 .step--active {
-  background: #FF79DA;
+  background: #F5EDFF;
 }
 .step__number {
   position: absolute;
   left: -3px;
+  top: 27px;
   background: #9356DC;
   height: 25px;
   width: 25px;
@@ -158,8 +142,28 @@ header .header__logo {
   text-align: center;
   line-height: 25px;
 }
-.step__number::after {
-  background: black;
+.step__awesome {
+  margin: 0 20px;
+  color: #7E7E7E;
+}
+.step__awesome--active {
+  color: #9356DC;
+}
+header {
+  width: 100%;
+  background: #fff;
+  -webkit-box-shadow: 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
+  box-shadow: 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
+}
+header .header-logo {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

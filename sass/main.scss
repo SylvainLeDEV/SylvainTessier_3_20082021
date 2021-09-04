@@ -8,6 +8,7 @@
 
 //Components
 @import "components/buttons";
+@import "components/cards";
 
 //Layout est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est réutilisable,
 // par exemple un header pour les mises en page de grande taille ou un footer ;
@@ -22,114 +23,4 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
-
-
-//Location
-.location {
-  background: $colour-bg-location;
-  -webkit-box-shadow: inset 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
-  box-shadow: inset 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
-
-  .location__city {
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    font-size: 1.2rem;
-
-    p {
-      margin-left: 10px;
-
-    }
-  }
-}
-
-//Research
-.research {
-  padding: 40px 0;
-  background: $colour-bg-gris;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .research__title {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    align-items: center;
-  }
-
-  h1 {
-    font-weight: 900;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-weight: 200;
-    margin-bottom: 15px;
-  }
-}
-
-//Functioning + cards of functioning
-
-.functioning {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
-  align-items: flex-start;
-
-  .functioning__title {
-
-    h2 {
-      font-weight: 700;
-      font-size: 1.3rem;
-    }
-  }
-}
-
-.cards__container {
-  width: 100%;
-}
-
-  .step {
-    display: flex;
-    background: $colour-bg-gris;
-    padding: 30px;
-    margin: 15px 0 15px 10px;
-    border-radius: 25px;
-    box-shadow: 9px 8px 19px 0 #00000042;
-    position: relative;
-
-    &--active {
-      background: $colour-secondary;
-    }
-
-    &__number {
-      position: absolute;
-      left: -3px;
-      background: $colour-primary;
-      height: 25px;
-      width: 25px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 25px;
-
-      &::after {
-        background: black;
-      }
-    }
-      &__awesome {
-
-      }
-        &__text {
-
-        }
-      }
-
-
 
