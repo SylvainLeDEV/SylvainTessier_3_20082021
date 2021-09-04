@@ -1,6 +1,5 @@
-.button__container{
 
-  .button__gradiant{
+  .btn-primary{
     background-image: -webkit-linear-gradient(top, $colour-secondary, $colour-primary);
     border-radius: 50px;
     color: #FFFFFF;
@@ -15,6 +14,6 @@
       background-image: -webkit-linear-gradient(top, $colour-secondary, $colour-primary);
       border-radius: 50px;
       text-decoration: none;
-    }
+
   }
 }

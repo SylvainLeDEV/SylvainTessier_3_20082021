@@ -79,7 +79,7 @@
 .functioning {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   align-items: flex-start;
 
@@ -93,17 +93,43 @@
 }
 
 .cards__container {
+  width: 100%;
+}
 
-    .cards__elements {
-display: flex;
-      .cards__number {
+  .step {
+    display: flex;
+    background: $colour-bg-gris;
+    padding: 30px;
+    margin: 15px 0 15px 10px;
+    border-radius: 25px;
+    box-shadow: 9px 8px 19px 0 #00000042;
+    position: relative;
 
-        .cards__awesome {
+    &--active {
+      background: $colour-secondary;
+    }
 
-          .cards__text {
+    &__number {
+      position: absolute;
+      left: -3px;
+      background: $colour-primary;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 25px;
 
-          }
-        }
+      &::after {
+        background: black;
       }
     }
-}
+      &__awesome {
+
+      }
+        &__text {
+
+        }
+      }
+
+
+

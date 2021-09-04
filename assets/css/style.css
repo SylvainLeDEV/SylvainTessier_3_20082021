@@ -44,7 +44,7 @@ td, th {
   padding: 0;
 }
 
-.button__container .button__gradiant {
+.btn-primary {
   background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
   border-radius: 50px;
   color: #FFFFFF;
@@ -54,7 +54,7 @@ td, th {
   cursor: pointer;
   border: transparent;
 }
-.button__container .button__gradiant:hover {
+.btn-primary:hover {
   transform: scale(1.05);
   transition: 0.3s;
   background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
@@ -123,7 +123,7 @@ header .header__logo {
 .functioning {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   align-items: flex-start;
 }
@@ -132,8 +132,34 @@ header .header__logo {
   font-size: 1.3rem;
 }
 
-.cards__container .cards__elements {
+.cards__container {
+  width: 100%;
+}
+
+.step {
   display: flex;
+  background: #F6F6F6;
+  padding: 30px;
+  margin: 15px 0 15px 10px;
+  border-radius: 25px;
+  box-shadow: 9px 8px 19px 0 #00000042;
+  position: relative;
+}
+.step--active {
+  background: #FF79DA;
+}
+.step__number {
+  position: absolute;
+  left: -3px;
+  background: #9356DC;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 25px;
+}
+.step__number::after {
+  background: black;
 }
 
 /*# sourceMappingURL=style.css.map */
