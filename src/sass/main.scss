@@ -1,0 +1,109 @@
+// Variables, function, mixins et %placeholders pour les extensions (si on veux en utilser)
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+
+//Base (Reset)
+@import "base/reset";
+
+//Components
+@import "components/buttons";
+
+//Layout est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est réutilisable,
+// par exemple un header pour les mises en page de grande taille ou un footer ;
+@import "layout/form";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+
+//Police Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+//Location
+.location {
+  background: $colour-bg-location;
+  -webkit-box-shadow: inset 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
+  box-shadow: inset 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
+
+  .location__city {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    font-size: 1.2rem;
+
+    p {
+      margin-left: 10px;
+
+    }
+  }
+}
+
+//Research
+.research {
+  padding: 40px 0;
+  background: $colour-bg-gris;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .research__title {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-weight: 200;
+    margin-bottom: 15px;
+  }
+}
+
+//Functioning + cards of functioning
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  align-items: flex-start;
+
+  .functioning__title {
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.cards__container {
+
+    .cards__elements {
+display: flex;
+      .cards__number {
+
+        .cards__awesome {
+
+          .cards__text {
+
+          }
+        }
+      }
+    }
+}
