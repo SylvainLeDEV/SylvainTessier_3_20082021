@@ -45,10 +45,12 @@ td, th {
 }
 
 .btn-primary {
-  background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
+  background: linear-gradient(160deg, #FF79DA 20%, #9356DC 100%);
   border-radius: 50px;
   color: #FFFFFF;
   padding: 1rem 1.3rem;
+  -webkit-box-shadow: 1px 1px 9px 0 #000000;
+  -moz-box-shadow: 1px 1px 9px 0 #000000;
   box-shadow: 1px 1px 9px 0 #000000;
   text-shadow: 6px 1px 20px #000000;
   cursor: pointer;
@@ -57,9 +59,96 @@ td, th {
 .btn-primary:hover {
   transform: scale(1.05);
   transition: 0.3s;
-  background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
   border-radius: 50px;
   text-decoration: none;
+}
+
+main {
+  background: #F6F6F6;
+}
+
+.cards-title-wrap {
+  width: 85%;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+.cards-title > h2 {
+  font-weight: 700;
+  font-size: 1.375rem;
+}
+
+.cards {
+  position: relative;
+  margin: 1.25rem 0;
+  -webkit-box-shadow: 9px 8px 19px 0 #00000042;
+  -moz-box-shadow: 9px 8px 19px 0 #00000042;
+  box-shadow: 9px 8px 19px 0 #00000042;
+  border-radius: 15px 15px 15px 15px;
+  /*QUAND LA CHECKBOX EST CHECK*/
+}
+.cards__img {
+  height: inherit;
+}
+.cards__img img {
+  height: 11.25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.cards__new {
+  position: absolute;
+  color: gray;
+  background: #99E2D0;
+  font-weight: 300;
+  padding: 5px;
+  top: 15px;
+  right: 15px;
+}
+.cards__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 0.9375rem;
+}
+.cards h3 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.cards__heart {
+  position: relative;
+  display: flex;
+}
+.cards .fas {
+  opacity: 0;
+  transition-duration: 0.5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  /*ON DEFINI UN BACKGROUND*/
+  -webkit-background-clip: text;
+  /*ON MET LE BACKGROUND SUR LE TEXTE*/
+  -webkit-text-fill-color: transparent;
+  /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+}
+.cards input {
+  width: 1.25rem;
+  height: 1.25rem;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+.cards input:checked ~ .far {
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+.cards input:checked ~ .fas {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+.cards .fa-heart {
+  font-size: 1.25rem;
+}
+.cards i {
+  position: absolute;
 }
 
 .location {
@@ -112,10 +201,10 @@ td, th {
 }
 .functioning .functioning-title h2 {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.375rem;
 }
 
-.container {
+.container-step {
   width: 100%;
 }
 
@@ -125,6 +214,8 @@ td, th {
   padding: 30px;
   margin: 15px 0 15px 10px;
   border-radius: 25px;
+  -webkit-box-shadow: 9px 8px 19px 0 #00000042;
+  -moz-box-shadow: 9px 8px 19px 0 #00000042;
   box-shadow: 9px 8px 19px 0 #00000042;
   position: relative;
 }
