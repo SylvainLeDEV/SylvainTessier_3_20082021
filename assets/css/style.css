@@ -24,6 +24,7 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 img, video {
@@ -42,6 +43,11 @@ table {
 
 td, th {
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .btn-primary {
@@ -67,7 +73,7 @@ main {
   background: #F6F6F6;
 }
 
-.cards-title-wrap {
+.cards-title-wrapper {
   width: 85%;
   margin: 0 auto;
   padding: 1.25rem 0;
@@ -251,6 +257,33 @@ header .header-logo {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+footer {
+  background: #353535;
+}
+
+.footer-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  padding-top: 10px;
+}
+.footer-logo svg {
+  width: 100px;
+}
+.footer-logo path {
+  fill: #fff;
+}
+
+.footer-liste {
+  color: #fff;
+  padding-bottom: 15px;
+}
+.footer-liste li {
+  padding: 4px 0;
 }
 
 * {

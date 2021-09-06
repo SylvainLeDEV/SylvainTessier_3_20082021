@@ -1,0 +1,29 @@
+footer {
+  background: #353535;
+}
+
+.footer-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  padding-top: 10px ;
+
+  svg {
+    width: 100px;
+  }
+  path {
+    fill: #fff;
+
+  }
+}
+
+.footer-liste {
+  color: #fff;
+  padding-bottom: 15px;
+
+  li {
+    padding: 4px 0;
+  }
+}
