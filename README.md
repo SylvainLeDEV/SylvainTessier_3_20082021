@@ -7,7 +7,7 @@ Logo et titre: **Shrikhand**
 Texte: **Roboto**
 
 ## *Couleurs*
-![Couleurs](assets/images/maquettes/Couleur-Maquette.png)
+![Couleurs](assets/maquettes/Couleur-Maquette.png)
 
 *Primaire:* **#9356DC**
 
