@@ -1,0 +1,25 @@
+{
+  "name": "sylvaintessier_3_20082021-d-veloppement",
+  "version": "1.0.0",
+  "description": "OhmyFood",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SylvainLeDEV/SylvainTessier_3_20082021.git"
+  },
+  "author": "Sylvain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SylvainLeDEV/SylvainTessier_3_20082021/issues"
+  },
+  "homepage": "https://github.com/SylvainLeDEV/SylvainTessier_3_20082021#readme",
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}

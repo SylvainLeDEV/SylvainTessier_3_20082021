@@ -1,0 +1,17 @@
+
+.btn-primary {
+ @include button-gradient;
+  border-radius: 50px;
+  color: #FFFFFF;
+  padding: 1rem 1.3rem;
+  @include button-shadow;
+  cursor: pointer;
+  border: transparent;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+}

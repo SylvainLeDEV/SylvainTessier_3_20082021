@@ -1,0 +1,35 @@
+@mixin cards-shadow {
+  -webkit-box-shadow:9px 8px 19px 0 #00000042;
+  -moz-box-shadow:9px 8px 19px 0 #00000042;
+  box-shadow: 9px 8px 19px 0 #00000042;
+}
+
+@mixin button-shadow{
+  -webkit-box-shadow: 1px 1px 9px 0 #000000;
+  -moz-box-shadow: 1px 1px 9px 0 #000000;
+  box-shadow: 1px 1px 9px 0 #000000;
+
+  text-shadow: 6px 1px 20px #000000;
+}
+
+@mixin h2{
+  font-weight: 700;
+  font-size: rem(22);
+}
+@mixin h3{
+  font-weight: 700;
+}
+
+@mixin new-on-cards{
+  color: gray;
+  background: #99E2D0;
+}
+
+@mixin heart-gradient{
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA)); /*ON DEFINI UN BACKGROUND*/
+  -webkit-background-clip: text; /*ON MET LE BACKGROUND SUR LE TEXTE*/
+  -webkit-text-fill-color: transparent; /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+}
+@mixin button-gradient{
+  background: linear-gradient(160deg, $colour-secondary 20%, $colour-primary 100%);
+}
