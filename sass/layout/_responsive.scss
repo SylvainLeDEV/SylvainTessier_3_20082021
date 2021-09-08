@@ -1,5 +1,38 @@
-@media #{$tablet} {
-  //.cards{
-  //   display: block;
-  // }
+//Responsive
+$breakpoints:(
+  tablet: 768px,
+  laptop: 1024px,
+  laptop-L: 1440px,
+  desktop: 1880px,
+);
+//A inclure directement pour midifier le responsive
+@mixin responsive-tablet {
+  @media screen and (max-width: $breakpoints, tablet) {
+    @content;
+  }
 }
+
+@mixin responsive-laptop {
+  @media screen and (max-width: $breakpoints, laptop) {
+    @content;
+  }
+}
+
+@mixin responsive-laptop-L {
+  @media screen and (max-width: $breakpoints, laptop-L) {
+    @content;
+  }
+}
+
+@mixin responsive-desktop {
+  @media screen and (max-width: $breakpoints, desktop) {
+    @content;
+  }
+}
+
+
+// Variable permet d'écrire directement la phrase
+$tablet: "only screen and (min-width: 768px)";
+$laptop: "only screen and (min-width: 1024px)";
+$laptop-L: "only screen and (min-width: 1440px)";
+$desktop: "only screen and (min-width: 1800px)";
