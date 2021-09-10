@@ -67,12 +67,30 @@ a {
   text-shadow: 6px 1px 20px #000000;
   cursor: pointer;
   border: transparent;
+  transition: transform 0.3s ease-in, box-shadow 0.3s;
 }
 .btn-primary:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
-  border-radius: 50px;
-  text-decoration: none;
+  transform: scale(1.1);
+  -webkit-box-shadow: 1px 1px 9px 0 #000000;
+  -moz-box-shadow: 1px 1px 9px 0 #000000;
+  box-shadow: 3px 3px 10px 0 #000000;
+  text-shadow: 6px 1px 20px #000000;
+}
+.btn-primary:hover::after {
+  opacity: 1;
+}
+.btn-primary::after {
+  border-radius: 25px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(160deg, #ff60d3 20%, #a674e2 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 main {
