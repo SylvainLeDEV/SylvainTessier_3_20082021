@@ -152,6 +152,7 @@ main {
 .cards__heart {
   position: relative;
   display: flex;
+  margin-right: 15px;
 }
 .cards__heart input {
   cursor: pointer;
@@ -326,11 +327,17 @@ footer {
   width: 100%;
   object-fit: cover;
 }
+.page__background {
+  position: relative;
+  margin: -4.0625rem 0 0 0;
+  border-radius: 35px 45px 0 0;
+  padding: 25px 0;
+  background: #fff;
+}
 .page__menu-wrapper {
   width: 85%;
   height: 100%;
-  margin: -4.0625rem auto 0 auto;
-  background-color: #fff;
+  margin: 0 auto;
 }
 
 .menu-title {
@@ -356,6 +363,7 @@ footer {
 }
 .menu__plat-menu > h3 {
   position: relative;
+  padding-top: 25px;
 }
 .menu__plat-menu > h3::after {
   content: "";
@@ -369,6 +377,7 @@ footer {
 }
 .menu__desserts-menu > h3 {
   position: relative;
+  padding-top: 25px;
 }
 .menu__desserts-menu > h3::after {
   content: "";
@@ -382,6 +391,11 @@ footer {
 }
 .menu .button-wrap {
   text-align: center;
+  padding: 20px 0;
+}
+.menu .button-wrap .btn-primary {
+  padding-right: 3.125rem;
+  padding-left: 3.125rem;
 }
 
 .container {
