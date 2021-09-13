@@ -20,12 +20,16 @@ main {
   @include cards-shadow;
   border-radius: 15px 15px 15px 15px;
 
+  &:hover {
+    @include hover-cards;
+  }
+
   &__img {
     height: inherit;
 
   }
 
-  &__img img {
+  &__img > img {
     height: rem(180);
     width: 100%;
     object-fit: cover;
@@ -39,6 +43,8 @@ main {
     padding: 5px;
     top: 15px;
     right: 15px;
+
+
   }
 
   &__heading {
@@ -57,45 +63,5 @@ main {
     margin-bottom: 5px;
 
   }
-
-  &__heart {
-    position: relative;
-    display: flex;
-  }
-
-  .fas {
-    opacity: 0;
-    transition-duration: 0.5s;
-    @include heart-gradient;
-  }
-
-  input {
-    width: rem(20);
-    height: rem(20);
-    opacity: 0;
-    cursor: pointer;
-    z-index: 3;
-  }
-
-  input:checked ~ .far {
-    transition-duration: 0.5s;
-    opacity: 0;
-  }
-
-  /*QUAND LA CHECKBOX EST CHECK*/
-  input:checked ~ .fas {
-    transition-duration: 0.5s;
-    opacity: 1;
-  }
-
-  .fa-heart {
-    font-size: rem(20);
-  }
-
-  i {
-    position: absolute;
-  }
 }
-
-
 

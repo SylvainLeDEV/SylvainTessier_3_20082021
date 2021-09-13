@@ -9,18 +9,20 @@
 //Components
 @import "components/buttons";
 @import "components/cards";
+@import "components/heart";
 
 //Layout est le dossier où vous mettez vos blocs BEM qui contiennent ce qui est réutilisable,
 // par exemple un header pour les mises en page de grande taille ou un footer ;
-@import "layout/form";
+@import "layout/accueil";
 @import "layout/header";
-@import "layout/nav";
 @import "layout/footer";
 @import "layout/responsive";
+@import "layout/menu";
 
 //Police Roboto
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+//Police Shrikhand
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 * {
   font-family: 'Roboto', sans-serif;
 }

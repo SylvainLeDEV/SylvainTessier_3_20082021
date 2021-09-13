@@ -1,0 +1,129 @@
+//Positionnemment de l'image
+
+.page{
+  &__header-image{
+
+    img{
+      max-height: 50vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__menu-wrapper{
+    width: 85%;
+    height: 100%;
+    margin: rem(-65) auto 0 auto;
+    background-color: #fff;
+  }
+}
+.menu-title {
+  @include vertical-centre-content;
+  justify-content: space-between;
+  margin-bottom: rem(30);
+}
+
+//Entrées - Plats - Desserts avec un border sur le pseudo-éléments
+.menu {
+  &__enter-menu > h3 {
+    position: relative;
+
+    &::after {
+      @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
+      border-bottom: 2px solid $colour-tertiaire;
+      width: rem(40);
+    }
+  }
+
+  &__plat-menu > h3 {
+    position: relative;
+
+    &::after {
+      @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
+      border-bottom: 2px solid $colour-tertiaire;
+      width: rem(40);
+    }
+  }
+
+  &__desserts-menu > h3 {
+    position: relative;
+
+    &::after {
+      @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
+      border-bottom: 2px solid $colour-tertiaire;
+      width: rem(40);
+    }
+  }
+  .button-wrap{
+    text-align: center;
+  }
+}
+
+// Container pour les cards + le :hover
+
+
+.container {
+  position: relative;
+  @include cards-shadow;
+  border-radius: rem(15);
+  overflow: hidden;
+  max-width: 100%;
+  height: rem(70);
+  @include vertical-centre-content;
+  margin: 15px 0;
+  cursor: pointer;
+
+
+  &:hover > .container__icon {
+    margin-right: rem(0);
+
+    i {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__description {
+    width: 100%;
+    height: 100%;
+    @include vertical-centre-content;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  &__text {
+    width: 100%;
+    margin-left: 1rem;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    & > h3 {
+      font-weight: 500;
+      font-size: rem(18);
+    }
+  }
+
+  &__price {
+    margin-top: rem(27);
+    margin-right: rem(15);
+    max-width: 100%;
+  }
+
+  &__icon {
+    @include vertical-centre-content;
+    width: rem(75);
+    height: 100%;
+    background: $colour-tertiaire;
+    transform-origin: right;
+    margin-right: rem(-75);
+    transition: 0.5s ease;
+  }
+
+  &__icon > i {
+    color: $colour-tertiaire;
+    padding: rem(5);
+    border-radius: 50%;
+    background: white;
+    transition: 0.5s ease;
+  }
+}

@@ -1,17 +1,34 @@
 
 .btn-primary {
- @include button-gradient;
+  @include button-gradient;
   border-radius: 50px;
   color: #FFFFFF;
   padding: 1rem 1.3rem;
   @include button-shadow;
   cursor: pointer;
   border: transparent;
+  transition: transform 0.3s ease-in, box-shadow 0.3s;
 
   &:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-    border-radius: 50px;
-    text-decoration: none;
+    transform: scale(1.10);
+    @include button-shadow-hover;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    border-radius: 25px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(160deg, darken($colour-secondary, 5) 20%, lighten($colour-primary, 7) 100%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
   }
 }

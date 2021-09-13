@@ -1,0 +1,33 @@
+//Heart
+
+.cards__heart{
+  position: relative;
+  display: flex;
+
+  input{
+    cursor: pointer;
+    width: rem(20);
+    height: rem(20);
+    z-index: 3;
+    opacity: 0;
+  }
+  i{
+    position: absolute;
+  }
+  .fa-heart{
+    font-size: rem(20);
+  }
+  .fas{
+    opacity: 0;
+    transition: opacity 0.5s;
+    @include heart-gradient;
+  }
+  input:checked ~ .fas {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  input:checked ~ .far{
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+}

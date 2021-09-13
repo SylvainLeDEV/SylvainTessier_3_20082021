@@ -1,0 +1,20 @@
+/* Error: expected ":".
+ *   ,
+ * 2 | $breakpoints{
+ *   |             ^
+ *   '
+ *   sass/layout/_responsive.scss 2:13  @import
+ *   sass/main.scss 20:9                root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ":".\a   \2577 \a 2 \2502  $breakpoints{\a   \2502              ^\a   \2575 \a   sass/layout/_responsive.scss 2:13  @import\a   sass/main.scss 20:9                root stylesheet';
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O3lEQU15RDs7QUFFekQ7RUFDRTs2Q0FDMkM7RUFDM0MsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLDhCQUE4QjtFQUM5Qiw2TUFBNk07QUFDL00iLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogRXJyb3I6IGV4cGVjdGVkIFwiOlwiLlxuICogICAsXG4gKiAyIHwgJGJyZWFrcG9pbnRze1xuICogICB8ICAgICAgICAgICAgIF5cbiAqICAgJ1xuICogICBzYXNzL2xheW91dC9fcmVzcG9uc2l2ZS5zY3NzIDI6MTMgIEBpbXBvcnRcbiAqICAgc2Fzcy9tYWluLnNjc3MgMjA6OSAgICAgICAgICAgICAgICByb290IHN0eWxlc2hlZXQgKi9cblxuYm9keTo6YmVmb3JlIHtcbiAgZm9udC1mYW1pbHk6IFwiU291cmNlIENvZGUgUHJvXCIsIFwiU0YgTW9ub1wiLCBNb25hY28sIEluY29uc29sYXRhLCBcIkZpcmEgTW9ub1wiLFxuICAgICAgXCJEcm9pZCBTYW5zIE1vbm9cIiwgbW9ub3NwYWNlLCBtb25vc3BhY2U7XG4gIHdoaXRlLXNwYWNlOiBwcmU7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBwYWRkaW5nOiAxZW07XG4gIG1hcmdpbi1ib3R0b206IDFlbTtcbiAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkIGJsYWNrO1xuICBjb250ZW50OiAnRXJyb3I6IGV4cGVjdGVkIFwiOlwiLlxcYSAgIFxcMjU3NyBcXGEgMiBcXDI1MDIgICRicmVha3BvaW50c3tcXGEgICBcXDI1MDIgICAgICAgICAgICAgIF5cXGEgICBcXDI1NzUgXFxhICAgc2Fzcy9sYXlvdXQvX3Jlc3BvbnNpdmUuc2NzcyAyOjEzICBAaW1wb3J0XFxhICAgc2Fzcy9tYWluLnNjc3MgMjA6OSAgICAgICAgICAgICAgICByb290IHN0eWxlc2hlZXQnO1xufVxuIl19 */

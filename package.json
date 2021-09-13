@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:assets/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:assets/css/style.css",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -15,11 +16,15 @@
   },
   "author": "Sylvain",
   "license": "ISC",
+  "browserslist": "last 4 version",
   "bugs": {
     "url": "https://github.com/SylvainLeDEV/SylvainTessier_3_20082021/issues"
   },
   "homepage": "https://github.com/SylvainLeDEV/SylvainTessier_3_20082021#readme",
   "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
     "sass": "^1.39.0"
   }
 }
