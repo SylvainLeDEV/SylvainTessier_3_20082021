@@ -7,6 +7,23 @@
   transform: translate($x , $y);
 }
 
+@mixin pseudo-elements-position ($content, $position, $top , $right, $bottom ,$left) {
+  content: $content;
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin vertical-centre-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//--- A voir si on garde ----
+
 @mixin cards-shadow {
   -webkit-box-shadow:9px 8px 19px 0 #00000042;
   -moz-box-shadow:9px 8px 19px 0 #00000042;
