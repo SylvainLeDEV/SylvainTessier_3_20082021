@@ -94,7 +94,7 @@ a {
   transition: opacity 250ms;
 }
 
-main {
+.cards-background {
   background: #F6F6F6;
 }
 
@@ -109,6 +109,15 @@ main {
   font-size: 1.375rem;
 }
 
+@media screen and (min-width: 768px) {
+  .container-cards {
+    margin: 20px 0;
+    display: grid;
+    grid-gap: 2rem;
+    grid: repeat(2, 1fr)/repeat(2, 1fr);
+  }
+}
+
 .cards {
   position: relative;
   margin: 1.25rem 0;
@@ -116,6 +125,11 @@ main {
   -moz-box-shadow: 9px 8px 19px 0 #00000042;
   box-shadow: 9px 8px 19px 0 #00000042;
   border-radius: 15px 15px 15px 15px;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    margin: 0 0;
+  }
 }
 .cards:hover {
   transform: scale(1.03);
@@ -340,6 +354,13 @@ main {
 .container-step {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .container-step {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 
 .step {
   display: flex;
@@ -467,7 +488,7 @@ footer {
   width: 2.5rem;
 }
 .menu__plat-menu {
-  animation: menu-appears 1.8s 2.7s alternate backwards;
+  animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
 }
 .menu__plat-menu > h3 {
   position: relative;
@@ -484,7 +505,7 @@ footer {
   width: 2.5rem;
 }
 .menu__desserts-menu {
-  animation: menu-appears 1.8s 2.9s alternate backwards;
+  animation: menu-appears 1.8s 2.9s ease-out alternate backwards;
 }
 .menu__desserts-menu > h3 {
   position: relative;
@@ -501,7 +522,7 @@ footer {
   width: 2.5rem;
 }
 .menu .button-wrap {
-  animation: menu-appears 1.8s 3.1s alternate backwards;
+  animation: menu-appears 1.8s 3.1s ease-out alternate backwards;
   text-align: center;
   padding: 20px 0;
 }
