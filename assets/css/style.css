@@ -1,4 +1,5 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
@@ -194,35 +195,95 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFFFFF80;
-  animation: loadinger 0.1s;
+  background-color: rgba(255, 255, 255, 0.88);
+  animation: loadinger 0.8s;
   animation-delay: 2.9s;
   animation-fill-mode: both;
 }
 
 .loading {
   z-index: 1;
-  border: 5px solid #9356DC;
-  border-top: 5px solid #FF79DA;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  animation: loading 1s ease-in-out 3;
-  animation-direction: normal;
+  opacity: 1;
+}
+.loading__letter {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 3rem;
+  color: black;
+  animation: loading 0.5s ease-in-out 3 both;
+  animation-direction: alternate-reverse;
+}
+.loading__letter--1 {
+  animation-delay: 125ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--2 {
+  animation-delay: 250ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--3 {
+  animation-delay: 375ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--4 {
+  animation-delay: 500ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--5 {
+  animation-delay: 625ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--6 {
+  animation-delay: 750ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--7 {
+  animation-delay: 875ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--8 {
+  animation-delay: 1000ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--2 {
+  padding-right: 5px;
+}
+.loading__letter--4 {
+  padding-right: 5px;
 }
 
 @keyframes loading {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(0);
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateY(-30px);
   }
 }
 @keyframes loadinger {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
   100% {
     opacity: 0;
     z-index: -3;
+    transform: translateY(-9999999);
   }
 }
 .location {
@@ -387,6 +448,9 @@ footer {
   margin-bottom: 1.875rem;
 }
 
+.menu__enter-menu {
+  animation: menu-appears 1.8s 2.5s alternate backwards;
+}
 .menu__enter-menu > h3 {
   position: relative;
 }
@@ -399,6 +463,9 @@ footer {
   left: 0;
   border-bottom: 2px solid #99E2D0;
   width: 2.5rem;
+}
+.menu__plat-menu {
+  animation: menu-appears 1.8s 2.7s alternate backwards;
 }
 .menu__plat-menu > h3 {
   position: relative;
@@ -413,6 +480,9 @@ footer {
   left: 0;
   border-bottom: 2px solid #99E2D0;
   width: 2.5rem;
+}
+.menu__desserts-menu {
+  animation: menu-appears 1.8s 2.9s alternate backwards;
 }
 .menu__desserts-menu > h3 {
   position: relative;
@@ -429,6 +499,7 @@ footer {
   width: 2.5rem;
 }
 .menu .button-wrap {
+  animation: menu-appears 1.8s 3.1s alternate backwards;
   text-align: center;
   padding: 20px 0;
 }
@@ -437,6 +508,19 @@ footer {
   padding-left: 3.125rem;
 }
 
+@keyframes menu-appears {
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .container {
   position: relative;
   -webkit-box-shadow: 9px 8px 19px 0 #00000042;

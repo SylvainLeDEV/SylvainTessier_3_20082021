@@ -1,26 +1,29 @@
 //Positionnemment de l'image
 
-.page{
-  &__header-image{
-    img{
+.page {
+  &__header-image {
+    img {
       max-height: 50vh;
       width: 100%;
       object-fit: cover;
     }
   }
-  &__background{
+
+  &__background {
     position: relative;
     margin: rem(-65) 0 0 0;
     border-radius: 35px 45px 0 0;
     padding: 25px 0;
     background: #fff;
   }
-  &__menu-wrapper{
+
+  &__menu-wrapper {
     width: 85%;
     height: 100%;
     margin: 0 auto;
   }
 }
+
 .menu-title {
   @include vertical-centre-content;
   justify-content: space-between;
@@ -29,45 +32,79 @@
 
 //Entrées - Plats - Desserts avec un border sur le pseudo-éléments
 .menu {
-  &__enter-menu > h3 {
-    position: relative;
 
-    &::after {
-      @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
-      border-bottom: 2px solid $colour-tertiaire;
-      width: rem(40);
+  &__enter-menu {
+    animation: menu-appears 1.8s 2.5s alternate backwards;
+
+
+    & > h3 {
+      position: relative;
+
+      &::after {
+        @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
+        border-bottom: 2px solid $colour-tertiaire;
+        width: rem(40);
+      }
     }
   }
 
-  &__plat-menu > h3 {
-    position: relative;
-    padding-top: 25px;
+  &__plat-menu {
+    animation: menu-appears 1.8s 2.7s alternate backwards;
 
-    &::after {
-      @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
-      border-bottom: 2px solid $colour-tertiaire;
-      width: rem(40);
+
+    & > h3 {
+      position: relative;
+      padding-top: 25px;
+
+      &::after {
+        @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
+        border-bottom: 2px solid $colour-tertiaire;
+        width: rem(40);
+      }
     }
   }
 
+  &__desserts-menu {
+    animation: menu-appears 1.8s 2.9s alternate backwards;
 
 
-  &__desserts-menu > h3 {
-    position: relative;
-    padding-top: 25px;
-    &::after {
-      @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
-      border-bottom: 2px solid $colour-tertiaire;
-      width: rem(40);
+    & > h3 {
+      position: relative;
+      padding-top: 25px;
+
+      &::after {
+        @include pseudo-elements-position("", absolute, 0, 0, 0, 0);
+        border-bottom: 2px solid $colour-tertiaire;
+        width: rem(40);
+      }
     }
   }
-  .button-wrap{
+
+  .button-wrap {
+    animation: menu-appears 1.8s 3.1s alternate backwards;
     text-align: center;
     padding: 20px 0;
-    .btn-primary{
+
+    .btn-primary {
       padding-right: rem(50);
       padding-left: rem(50);
     }
+  }
+}
+
+//Animation des menus
+
+@keyframes menu-appears {
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
