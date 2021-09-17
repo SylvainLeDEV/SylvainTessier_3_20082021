@@ -16,7 +16,7 @@ $anim-delay :math.div($anim-dur, $num-letter);
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.88);
-  animation: loadinger 0.8s;
+  animation: loadinger linear 0.2s;
   animation-delay: 2.9s;
   animation-fill-mode: both;
 }
@@ -58,7 +58,7 @@ $anim-delay :math.div($anim-dur, $num-letter);
 
   }
   100% {
-    transform: translateY(-30px);
+    transform: translateY(30px);
   }
 }
 
@@ -67,14 +67,14 @@ $anim-delay :math.div($anim-dur, $num-letter);
 
   0% {
     opacity: 1;
-    transform: translateY(0);
+    //transform: translateY(0);
+    right: 0;
   }
   100% {
     opacity: 0;
-    z-index: -3;
-    transform: translateY(-9999999);
+    z-index: -1;
+    //transform: translateY(-400);
+    right: 100%;
   }
 }
-
-// Apparition des menu
 

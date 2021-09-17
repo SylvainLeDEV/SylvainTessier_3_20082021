@@ -11,7 +11,8 @@
 
   &__background {
     position: relative;
-    margin: rem(-65) 0 0 0;
+    margin: rem(-65) auto 0 auto;
+    max-width: 1100px;
     border-radius: 35px 45px 0 0;
     padding: 25px 0;
     background: #fff;
@@ -49,7 +50,7 @@
   }
 
   &__plat-menu {
-    animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
+    animation: menu-appears 1.8s 2.5s ease-out alternate backwards;
 
 
     & > h3 {
@@ -97,9 +98,6 @@
 @keyframes menu-appears {
   0% {
     transform: translateY(-3rem);
-    opacity: 0;
-  }
-  50% {
     opacity: 0;
   }
   100% {

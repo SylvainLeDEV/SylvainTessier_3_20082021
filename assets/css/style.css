@@ -102,6 +102,7 @@ a {
   width: 85%;
   margin: 0 auto;
   padding: 1.25rem 0;
+  max-width: 1100px;
 }
 
 .cards-title > h2 {
@@ -210,7 +211,7 @@ a {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.88);
-  animation: loadinger 0.8s;
+  animation: loadinger linear 0.2s;
   animation-delay: 2.9s;
   animation-fill-mode: both;
 }
@@ -286,18 +287,18 @@ a {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-30px);
+    transform: translateY(30px);
   }
 }
 @keyframes loadinger {
   0% {
     opacity: 1;
-    transform: translateY(0);
+    right: 0;
   }
   100% {
     opacity: 0;
-    z-index: -3;
-    transform: translateY(-9999999);
+    z-index: -1;
+    right: 100%;
   }
 }
 .location {
@@ -345,6 +346,7 @@ a {
   width: 85%;
   margin: 20px auto;
   align-items: flex-start;
+  max-width: 1100px;
 }
 .functioning .functioning-title h2 {
   font-weight: 700;
@@ -423,6 +425,7 @@ footer {
 .footer-wrapper {
   width: 85%;
   margin: 0 auto;
+  max-width: 1100px;
 }
 
 .footer-logo {
@@ -452,7 +455,8 @@ footer {
 }
 .page__background {
   position: relative;
-  margin: -4.0625rem 0 0 0;
+  margin: -4.0625rem auto 0 auto;
+  max-width: 1100px;
   border-radius: 35px 45px 0 0;
   padding: 25px 0;
   background: #fff;
@@ -488,7 +492,7 @@ footer {
   width: 2.5rem;
 }
 .menu__plat-menu {
-  animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
+  animation: menu-appears 1.8s 2.5s ease-out alternate backwards;
 }
 .menu__plat-menu > h3 {
   position: relative;
@@ -534,9 +538,6 @@ footer {
 @keyframes menu-appears {
   0% {
     transform: translateY(-3rem);
-    opacity: 0;
-  }
-  50% {
     opacity: 0;
   }
   100% {
