@@ -54,7 +54,7 @@ td, th {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .btn-primary {
@@ -212,7 +212,7 @@ a {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.88);
   animation: loadinger linear 0.2s;
-  animation-delay: 2.9s;
+  animation-delay: 2.6s;
   animation-fill-mode: both;
 }
 
@@ -313,7 +313,7 @@ a {
   align-items: center;
   font-size: 1.2rem;
 }
-.location .location-city p {
+.location .location-city h3 {
   margin-left: 10px;
 }
 
@@ -410,6 +410,7 @@ header .arrow {
 }
 header .arrow .fas {
   font-size: 1.25rem;
+  color: black;
 }
 header .header-logo {
   height: 4rem;
