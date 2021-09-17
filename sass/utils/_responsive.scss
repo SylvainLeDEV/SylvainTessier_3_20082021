@@ -1,4 +1,4 @@
-//Responsive
+//Responsive Map
 $breakpoints:(
   tablet: 768px,
   laptop: 1024px,
@@ -6,26 +6,26 @@ $breakpoints:(
   desktop: 1880px,
 );
 //A inclure directement pour midifier le responsive
-@mixin responsive-tablet {
-  @media screen and (max-width: $breakpoints, tablet) {
+@mixin responsiveTablet {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
     @content;
   }
 }
 
 @mixin responsive-laptop {
-  @media screen and (max-width: $breakpoints, laptop) {
+  @media screen and (min-width: $breakpoints, laptop) {
     @content;
   }
 }
 
 @mixin responsive-laptop-L {
-  @media screen and (max-width: $breakpoints, laptop-L) {
+  @media screen and (min-width: $breakpoints, laptop-L) {
     @content;
   }
 }
 
 @mixin responsive-desktop {
-  @media screen and (max-width: $breakpoints, desktop) {
+  @media screen and (min-width: $breakpoints, desktop) {
     @content;
   }
 }

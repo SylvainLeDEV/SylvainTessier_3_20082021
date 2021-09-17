@@ -5,6 +5,7 @@ footer {
 .footer-wrapper {
   width: 85%;
   margin: 0 auto;
+  max-width: 1100px;
 }
 
 .footer-logo {
@@ -20,10 +21,12 @@ footer {
 }
 
 .footer-liste {
-  color: #fff;
   padding-bottom: 15px;
 
   li {
     padding: 4px 0;
+    a{
+      color: #fff;
+    }
   }
 }

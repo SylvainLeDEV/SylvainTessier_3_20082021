@@ -52,17 +52,25 @@
   width: 85%;
   margin: 20px auto;
   align-items: flex-start;
+  max-width: 1100px;
 
   .functioning-title {
 
     h2 {
-      @include h2
+      @include h2;
     }
   }
 }
 
 .container-step {
   width: 100%;
+
+  @include responsiveTablet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
 }
 
 .step {
@@ -95,6 +103,7 @@
     line-height: 25px;
 
   }
+
   &__awesome {
     margin: 0 20px;
     color: $colour-font-awesome-gris;

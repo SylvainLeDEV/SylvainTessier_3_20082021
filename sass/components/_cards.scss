@@ -1,6 +1,6 @@
 //Cards page d'accueil
 
-main {
+.cards-background{
   background: $colour-bg-gris;
 }
 
@@ -8,16 +8,30 @@ main {
   width: 85%;
   margin: 0 auto;
   padding: rem(20) 0;
+  max-width: 1100px;
 }
 
 .cards-title > h2 {
   @include h2;
 }
 
+
+.container-cards{
+  @include responsiveTablet{
+    margin: 20px 0;
+    display: grid;
+    grid-gap: 2rem;
+    grid: repeat(2, 1fr) / repeat(2, 1fr)
+  }
+}
+
 .cards {
   position: relative;
   margin: rem(20) 0;
   @include cards-shadow;
+  @include responsiveTablet{
+    margin: 0 0;
+  }
   border-radius: 15px 15px 15px 15px;
 
   &:hover {

@@ -1,4 +1,5 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
@@ -93,7 +94,7 @@ a {
   transition: opacity 250ms;
 }
 
-main {
+.cards-background {
   background: #F6F6F6;
 }
 
@@ -101,11 +102,21 @@ main {
   width: 85%;
   margin: 0 auto;
   padding: 1.25rem 0;
+  max-width: 1100px;
 }
 
 .cards-title > h2 {
   font-weight: 700;
   font-size: 1.375rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container-cards {
+    margin: 20px 0;
+    display: grid;
+    grid-gap: 2rem;
+    grid: repeat(2, 1fr)/repeat(2, 1fr);
+  }
 }
 
 .cards {
@@ -115,6 +126,11 @@ main {
   -moz-box-shadow: 9px 8px 19px 0 #00000042;
   box-shadow: 9px 8px 19px 0 #00000042;
   border-radius: 15px 15px 15px 15px;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    margin: 0 0;
+  }
 }
 .cards:hover {
   transform: scale(1.03);
@@ -152,6 +168,7 @@ main {
 .cards__heart {
   position: relative;
   display: flex;
+  margin-right: 15px;
 }
 .cards__heart input {
   cursor: pointer;
@@ -185,6 +202,105 @@ main {
   transition: opacity 0.5s;
 }
 
+.loadcontent {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.88);
+  animation: loadinger linear 0.2s;
+  animation-delay: 2.9s;
+  animation-fill-mode: both;
+}
+
+.loading {
+  z-index: 1;
+  opacity: 1;
+}
+.loading__letter {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-size: 3rem;
+  color: black;
+  animation: loading 0.5s ease-in-out 3 both;
+  animation-direction: alternate-reverse;
+}
+.loading__letter--1 {
+  animation-delay: 125ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--2 {
+  animation-delay: 250ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--3 {
+  animation-delay: 375ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--4 {
+  animation-delay: 500ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--5 {
+  animation-delay: 625ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--6 {
+  animation-delay: 750ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--7 {
+  animation-delay: 875ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--8 {
+  animation-delay: 1000ms;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.loading__letter--2 {
+  padding-right: 5px;
+}
+.loading__letter--4 {
+  padding-right: 5px;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes loadinger {
+  0% {
+    opacity: 1;
+    right: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    right: 100%;
+  }
+}
 .location {
   background: #EAEAEA;
   -webkit-box-shadow: inset 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
@@ -230,6 +346,7 @@ main {
   width: 85%;
   margin: 20px auto;
   align-items: flex-start;
+  max-width: 1100px;
 }
 .functioning .functioning-title h2 {
   font-weight: 700;
@@ -238,6 +355,13 @@ main {
 
 .container-step {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .container-step {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .step {
@@ -301,6 +425,7 @@ footer {
 .footer-wrapper {
   width: 85%;
   margin: 0 auto;
+  max-width: 1100px;
 }
 
 .footer-logo {
@@ -314,11 +439,13 @@ footer {
 }
 
 .footer-liste {
-  color: #fff;
   padding-bottom: 15px;
 }
 .footer-liste li {
   padding: 4px 0;
+}
+.footer-liste li a {
+  color: #fff;
 }
 
 .page__header-image img {
@@ -326,11 +453,18 @@ footer {
   width: 100%;
   object-fit: cover;
 }
+.page__background {
+  position: relative;
+  margin: -4.0625rem auto 0 auto;
+  max-width: 1100px;
+  border-radius: 35px 45px 0 0;
+  padding: 25px 0;
+  background: #fff;
+}
 .page__menu-wrapper {
   width: 85%;
   height: 100%;
-  margin: -4.0625rem auto 0 auto;
-  background-color: #fff;
+  margin: 0 auto;
 }
 
 .menu-title {
@@ -341,6 +475,9 @@ footer {
   margin-bottom: 1.875rem;
 }
 
+.menu__enter-menu {
+  animation: menu-appears 1.8s 2.5s alternate backwards;
+}
 .menu__enter-menu > h3 {
   position: relative;
 }
@@ -354,8 +491,12 @@ footer {
   border-bottom: 2px solid #99E2D0;
   width: 2.5rem;
 }
+.menu__plat-menu {
+  animation: menu-appears 1.8s 2.5s ease-out alternate backwards;
+}
 .menu__plat-menu > h3 {
   position: relative;
+  padding-top: 25px;
 }
 .menu__plat-menu > h3::after {
   content: "";
@@ -367,8 +508,12 @@ footer {
   border-bottom: 2px solid #99E2D0;
   width: 2.5rem;
 }
+.menu__desserts-menu {
+  animation: menu-appears 1.8s 2.9s ease-out alternate backwards;
+}
 .menu__desserts-menu > h3 {
   position: relative;
+  padding-top: 25px;
 }
 .menu__desserts-menu > h3::after {
   content: "";
@@ -381,9 +526,25 @@ footer {
   width: 2.5rem;
 }
 .menu .button-wrap {
+  animation: menu-appears 1.8s 3.1s ease-out alternate backwards;
   text-align: center;
+  padding: 20px 0;
+}
+.menu .button-wrap .btn-primary {
+  padding-right: 3.125rem;
+  padding-left: 3.125rem;
 }
 
+@keyframes menu-appears {
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .container {
   position: relative;
   -webkit-box-shadow: 9px 8px 19px 0 #00000042;
