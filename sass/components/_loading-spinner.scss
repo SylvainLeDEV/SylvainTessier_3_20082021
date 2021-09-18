@@ -4,7 +4,7 @@
 
 $num-letter: 8;
 $anim-dur: 1000ms;
-$anim-delay :math.div($anim-dur, $num-letter);
+$anim-delay: math.div($anim-dur, $num-letter);
 
 @import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
 .loadcontent {
@@ -16,7 +16,7 @@ $anim-delay :math.div($anim-dur, $num-letter);
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.88);
-  animation: loadinger linear 0.2s;
+  animation: loadinger linear .3s;
   animation-delay: 2.6s;
   animation-fill-mode: both;
 }
@@ -69,6 +69,12 @@ $anim-delay :math.div($anim-dur, $num-letter);
     opacity: 1;
     //transform: translateY(0);
     right: 0;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
