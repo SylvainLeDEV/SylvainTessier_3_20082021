@@ -28,7 +28,7 @@
 .cards {
   position: relative;
   margin: rem(20) 0;
-  @include cards-shadow;
+  box-shadow: $cards-shadow;
   @include responsiveTablet{
     margin: 0 0;
   }

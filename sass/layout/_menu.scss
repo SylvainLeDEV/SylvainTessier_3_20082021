@@ -3,7 +3,7 @@
 .page {
   &__header-image {
     img {
-      max-height: 50vh;
+      height: 30vh;
       width: 100%;
       object-fit: cover;
     }
@@ -35,7 +35,7 @@
 .menu {
 
   &__enter-menu {
-    animation: menu-appears 1.8s 2.5s alternate backwards;
+    animation: menu-appears 1.8s 2.7s alternate backwards;
 
 
     & > h3 {
@@ -50,7 +50,7 @@
   }
 
   &__plat-menu {
-    animation: menu-appears 1.8s 2.5s ease-out alternate backwards;
+    animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
 
 
     & > h3 {
@@ -66,7 +66,7 @@
   }
 
   &__desserts-menu {
-    animation: menu-appears 1.8s 2.9s ease-out alternate backwards;
+    animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
 
 
     & > h3 {
@@ -82,7 +82,7 @@
   }
 
   .button-wrap {
-    animation: menu-appears 1.8s 3.1s ease-out alternate backwards;
+    animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
     text-align: center;
     padding: 20px 0;
 
@@ -142,11 +142,17 @@
     overflow: hidden;
     max-width: 100%;
     white-space: nowrap;
-    text-overflow: ellipsis;
+
 
     & > h3 {
       font-weight: 500;
       font-size: rem(18);
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    & > p {
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 

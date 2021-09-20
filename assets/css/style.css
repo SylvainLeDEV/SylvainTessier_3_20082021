@@ -62,8 +62,6 @@ a {
   border-radius: 50px;
   color: #FFFFFF;
   padding: 1rem 1.3rem;
-  -webkit-box-shadow: 1px 1px 9px 0 #000000;
-  -moz-box-shadow: 1px 1px 9px 0 #000000;
   box-shadow: 1px 1px 9px 0 #000000;
   text-shadow: 6px 1px 20px #000000;
   cursor: pointer;
@@ -72,8 +70,6 @@ a {
 }
 .btn-primary:hover {
   transform: scale(1.1);
-  -webkit-box-shadow: 1px 1px 9px 0 #000000;
-  -moz-box-shadow: 1px 1px 9px 0 #000000;
   box-shadow: 3px 3px 10px 0 #000000;
   text-shadow: 6px 1px 20px #000000;
 }
@@ -122,8 +118,6 @@ a {
 .cards {
   position: relative;
   margin: 1.25rem 0;
-  -webkit-box-shadow: 9px 8px 19px 0 #00000042;
-  -moz-box-shadow: 9px 8px 19px 0 #00000042;
   box-shadow: 9px 8px 19px 0 #00000042;
   border-radius: 15px 15px 15px 15px;
 }
@@ -211,7 +205,7 @@ a {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.88);
-  animation: loadinger linear 0.2s;
+  animation: loadinger linear 0.3s;
   animation-delay: 2.6s;
   animation-fill-mode: both;
 }
@@ -295,6 +289,12 @@ a {
     opacity: 1;
     right: 0;
   }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
   100% {
     opacity: 0;
     z-index: -1;
@@ -370,8 +370,6 @@ a {
   padding: 30px;
   margin: 15px 0 15px 10px;
   border-radius: 25px;
-  -webkit-box-shadow: 9px 8px 19px 0 #00000042;
-  -moz-box-shadow: 9px 8px 19px 0 #00000042;
   box-shadow: 9px 8px 19px 0 #00000042;
   position: relative;
 }
@@ -401,7 +399,6 @@ a {
 
 header {
   position: relative;
-  -webkit-box-shadow: 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
   box-shadow: 0px 27px 15px -9px rgba(168, 168, 168, 0.2);
 }
 header .arrow {
@@ -422,11 +419,24 @@ header .header-logo {
 footer {
   background: #353535;
 }
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 2rem 0;
+  }
+}
 
 .footer-wrapper {
   width: 85%;
   margin: 0 auto;
   max-width: 1100px;
+}
+@media screen and (min-width: 1024px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+  }
 }
 
 .footer-logo {
@@ -435,6 +445,11 @@ footer {
 .footer-logo svg {
   width: 100px;
 }
+@media screen and (min-width: 1024px) {
+  .footer-logo svg {
+    width: 150px;
+  }
+}
 .footer-logo path {
   fill: #fff;
 }
@@ -442,15 +457,28 @@ footer {
 .footer-liste {
   padding-bottom: 15px;
 }
-.footer-liste li {
+@media screen and (min-width: 1024px) {
+  .footer-liste {
+    padding-bottom: 0;
+    flex: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-liste ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.footer-liste ul li {
   padding: 4px 0;
 }
-.footer-liste li a {
+.footer-liste ul li a {
   color: #fff;
 }
 
 .page__header-image img {
-  max-height: 50vh;
+  height: 30vh;
   width: 100%;
   object-fit: cover;
 }
@@ -477,7 +505,7 @@ footer {
 }
 
 .menu__enter-menu {
-  animation: menu-appears 1.8s 2.5s alternate backwards;
+  animation: menu-appears 1.8s 2.7s alternate backwards;
 }
 .menu__enter-menu > h3 {
   position: relative;
@@ -493,7 +521,7 @@ footer {
   width: 2.5rem;
 }
 .menu__plat-menu {
-  animation: menu-appears 1.8s 2.5s ease-out alternate backwards;
+  animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
 }
 .menu__plat-menu > h3 {
   position: relative;
@@ -510,7 +538,7 @@ footer {
   width: 2.5rem;
 }
 .menu__desserts-menu {
-  animation: menu-appears 1.8s 2.9s ease-out alternate backwards;
+  animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
 }
 .menu__desserts-menu > h3 {
   position: relative;
@@ -527,7 +555,7 @@ footer {
   width: 2.5rem;
 }
 .menu .button-wrap {
-  animation: menu-appears 1.8s 3.1s ease-out alternate backwards;
+  animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
   text-align: center;
   padding: 20px 0;
 }
@@ -548,8 +576,6 @@ footer {
 }
 .container {
   position: relative;
-  -webkit-box-shadow: 9px 8px 19px 0 #00000042;
-  -moz-box-shadow: 9px 8px 19px 0 #00000042;
   box-shadow: 9px 8px 19px 0 #00000042;
   border-radius: 0.9375rem;
   overflow: hidden;
@@ -582,11 +608,16 @@ footer {
   overflow: hidden;
   max-width: 100%;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .container__text > h3 {
   font-weight: 500;
   font-size: 1.125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container__text > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container__price {
   margin-top: 1.6875rem;

@@ -1,19 +1,32 @@
 footer {
   background: #353535;
+  @include responsive-laptop {
+    padding: rem(32) 0;
+  }
 }
 
 .footer-wrapper {
   width: 85%;
   margin: 0 auto;
   max-width: 1100px;
+  @include responsive-laptop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+  }
 }
 
 .footer-logo {
-  padding-top: 10px ;
+  padding-top: 10px;
 
   svg {
     width: 100px;
+    @include responsive-laptop {
+      width: 150px;
+    }
   }
+
   path {
     fill: #fff;
 
@@ -22,11 +35,24 @@ footer {
 
 .footer-liste {
   padding-bottom: 15px;
+  @include responsive-laptop {
+    padding-bottom: 0;
+    flex: 1;
+  }
 
-  li {
-    padding: 4px 0;
-    a{
-      color: #fff;
+  ul {
+  @include responsive-laptop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+    li {
+      padding: 4px 0;
+
+      a {
+        color: #fff;
+      }
     }
   }
 }
