@@ -467,7 +467,7 @@ footer {
   .footer-liste ul {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 .footer-liste ul li {

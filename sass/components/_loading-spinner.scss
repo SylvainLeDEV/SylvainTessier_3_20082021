@@ -36,7 +36,7 @@ $anim-delay: math.div($anim-dur, $num-letter);
       &--#{$i} {
         animation-delay: $anim-delay*$i;
         //Pour avoir du text en grandient
-        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));;
+        background: -webkit-gradient(linear, left top, left bottom, from($colour-primary), to($colour-secondary));;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
