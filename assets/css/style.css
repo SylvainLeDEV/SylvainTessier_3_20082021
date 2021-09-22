@@ -493,7 +493,7 @@ footer {
 }
 
 .menu__enter-menu {
-  animation: menu-appears 1.8s 2.7s alternate backwards;
+  animation: menu-appears 1.8s 2.7s ease-out alternate backwards;
 }
 .menu__enter-menu > h3 {
   position: relative;
