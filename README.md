@@ -1,4 +1,22 @@
 ![Oh my food](assets/images/logo/ohmyfood@2x.svg)
+
+#Identité
+
+ -Ohmyfood ! Est une entreprise de commande de repas en ligne. 
+ 
+ -Le concept est de permettre aux utilisateurs de composer leur propre menu et réduire leur temps
+d’attente dans les restaurants, car leur menu est préparé à l’avance.
+
+ -Déjà développé à New-York dans un premier temps, Oh my Food souhaite élargit son 
+ concept sur la capitale de la gastronomie : Paris.
+
+-Ils ciblent les restaurants luxueux des villes dans lesquelles ils sont établis et souhaite être identifié
+comme une entreprise proposant des services haut de gamme.
+
+-Ils ciblent les classes moyennes et supérieures, connectées et souvent pressées.
+
+
+
 # Identité graphique
 ## *Police*
 

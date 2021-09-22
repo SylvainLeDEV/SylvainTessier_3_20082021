@@ -12,3 +12,7 @@ $colour-step-awesome-active: #9356DC;
 
 //shadow
 $cards-shadow : 9px 8px 19px 0 #00000042;
+
+//Background
+$button-gradient: linear-gradient(160deg, $colour-secondary 20%, $colour-primary 100%);
+$button-gradient-hover: linear-gradient(160deg, darken($colour-secondary, 5) 20%, lighten($colour-primary, 7) 100%);

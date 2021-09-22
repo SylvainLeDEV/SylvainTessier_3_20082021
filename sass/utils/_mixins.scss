@@ -22,9 +22,22 @@
   align-items: center;
 }
 
-//--- A voir si on garde ----
+@mixin heart-gradient{
 
-//Peut-etre fait en variable
+  background: linear-gradient($colour-primary, $colour-secondary);/*ON DEFINI UN BACKGROUND*/
+
+  //La propriété background-clip définit la façon dont l'arrière-plan d'un élément (que ce soit l'image ou la couleur) s'étend sous la boîte de bordure, la boîte de remplissage (padding) ou la boîte de contenu.
+  -webkit-background-clip: text; /*ON MET LE BACKGROUND SUR LE TEXTE*/
+
+  //La propriété -webkit-text-fill-color définit la couleur utilisée pour dessiner le contenu des lettres qui forment un texte. Si cette propriété n'est pas définie, c'est la valeur de la propriété color qui sera utilisée.
+  -webkit-text-fill-color: transparent; /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+}
+
+
+//--- A voir si on garde ----
+// Car peut-etre fait en variable
+
+
 @mixin cards-shadow {
   box-shadow: 9px 8px 19px 0 #00000042;
 
@@ -60,15 +73,7 @@
 @mixin new-on-cards{
   color: gray;
   background: #99E2D0;
-}
-
-@mixin heart-gradient{
-  background: -webkit-gradient(linear, left top, left bottom, from($colour-primary), to($colour-secondary)); /*ON DEFINI UN BACKGROUND*/
-  -webkit-background-clip: text; /*ON MET LE BACKGROUND SUR LE TEXTE*/
-  -webkit-text-fill-color: transparent; /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
-}
-@mixin button-gradient{
-  background: linear-gradient(160deg, $colour-secondary 20%, $colour-primary 100%);
+  font-weight: 300;
 }
 
 @mixin hover-cards{

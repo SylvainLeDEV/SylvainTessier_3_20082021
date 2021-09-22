@@ -34,9 +34,10 @@ $anim-delay: math.div($anim-dur, $num-letter);
 
     @for $i from 1 through $num-letter {
       &--#{$i} {
-        animation-delay: $anim-delay*$i;
-        //Pour avoir du text en grandient
-        background: -webkit-gradient(linear, left top, left bottom, from($colour-primary), to($colour-secondary));;
+        animation-delay: $anim-delay * $i;
+
+        //Text grandient
+        background: linear-gradient($colour-primary, $colour-secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -67,7 +68,6 @@ $anim-delay: math.div($anim-dur, $num-letter);
 
   0% {
     opacity: 1;
-    //transform: translateY(0);
     right: 0;
   }
   25% {
@@ -79,7 +79,6 @@ $anim-delay: math.div($anim-dur, $num-letter);
   100% {
     opacity: 0;
     z-index: -1;
-    //transform: translateY(-400);
     right: 100%;
   }
 }
