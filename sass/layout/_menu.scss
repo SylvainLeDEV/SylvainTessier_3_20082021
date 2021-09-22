@@ -106,8 +106,7 @@
   }
 }
 
-// Container pour les cards + le :hover
-
+// Container pour les cards (Nourriture) + le :hover
 .container {
   position: relative;
   @include cards-shadow;
@@ -119,14 +118,6 @@
   margin: 15px 0;
   cursor: pointer;
 
-
-  &:hover > .container__icon {
-    margin-right: rem(0);
-
-    i {
-      transform: rotate(360deg);
-    }
-  }
 
   &__description {
     width: 100%;
@@ -150,6 +141,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+
     & > p {
       overflow: hidden;
       text-overflow: ellipsis;
@@ -167,7 +159,6 @@
     width: rem(75);
     height: 100%;
     background: $colour-tertiaire;
-    transform-origin: right;
     margin-right: rem(-75);
     transition: 0.5s ease;
   }
@@ -178,5 +169,13 @@
     border-radius: 50%;
     background: white;
     transition: 0.5s ease;
+  }
+
+  &:hover > .container__icon {
+    margin-right: rem(0);
+
+    i {
+      transform: rotate(360deg);
+    }
   }
 }
