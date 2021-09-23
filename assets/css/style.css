@@ -469,6 +469,16 @@ footer {
 .footer-liste ul li a {
   color: #fff;
 }
+.footer-liste ul li .fas {
+  margin-right: 10px;
+  width: 10px;
+}
+.footer-liste ul li .fas.fa-utensils {
+  font-size: 13px;
+}
+.footer-liste ul li .fas.fa-hands-helping {
+  font-size: 12px;
+}
 
 .page__header-image img {
   height: 30vh;
