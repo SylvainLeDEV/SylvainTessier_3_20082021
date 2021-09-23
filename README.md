@@ -51,7 +51,7 @@ Texte: **Roboto**
     - 4 pages menu de restaurant minimum.
 - **Footer**
     - Footer identique sur toutes les pages.
-    - Contact renvoie vers une adresse mail.
+    - Contact renvoie vers une adresse mail. "mailto dans le HTML"
 - **Header**
     - Header présent sur toutes pages.
     - Sur la page d'acceuil, il contient le logo.
