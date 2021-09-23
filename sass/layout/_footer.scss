@@ -41,17 +41,34 @@ footer {
   }
 
   ul {
-  @include responsive-laptop {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+    @include responsive-laptop {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
 
     li {
       padding: 4px 0;
 
       a {
         color: #fff;
+      }
+
+      .fas {
+        margin-right: 10px;
+        width: 10px;
+
+        &.fa-utensils {
+
+          font-size: 13px;
+
+        }
+
+        &.fa-hands-helping {
+
+          font-size: 12px;
+
+        }
       }
     }
   }
