@@ -15,7 +15,7 @@ $anim-delay: math.div($anim-dur, $num-letter);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255, 255, 255, 1);
   animation: loadinger linear .3s;
   animation-delay: 2.6s;
   animation-fill-mode: both;
