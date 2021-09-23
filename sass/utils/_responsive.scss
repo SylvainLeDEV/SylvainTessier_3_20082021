@@ -5,6 +5,7 @@ $breakpoints:(
   laptop-L: 1440px,
   desktop: 1880px,
 );
+
 //A inclure directement pour midifier le responsive
 @mixin responsiveTablet {
   @media screen and (min-width: map-get($breakpoints, tablet)) {
