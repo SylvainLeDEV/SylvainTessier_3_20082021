@@ -190,7 +190,17 @@
     }
   }
 
-  &:hover > .container__icon {
+  @media (hover: hover) {
+    input[type="checkbox"]:hover ~ .container__icon {
+      margin-right: rem(0);
+
+      i {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &:hover ~ .container__icon {
     margin-right: rem(0);
 
     i {
