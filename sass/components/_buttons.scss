@@ -9,6 +9,7 @@ position: relative;
     appearance: none;
     cursor: pointer;
     z-index: 2;
+    opacity: 0;
     @include responsive-laptop{
       z-index: -3;
     }
