@@ -73,6 +73,7 @@ a {
   appearance: none;
   cursor: pointer;
   z-index: 2;
+  opacity: 0;
 }
 @media screen and (min-width: 1024px) {
   .button-wrap input {
@@ -625,6 +626,7 @@ footer {
   position: absolute;
   cursor: pointer;
   left: -3px;
+  opacity: 0;
 }
 .container__description {
   width: 100%;
