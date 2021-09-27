@@ -61,32 +61,6 @@ a {
   color: white;
 }
 
-.button-wrap {
-  position: relative;
-}
-.button-wrap input {
-  position: absolute;
-  right: 30%;
-  bottom: 20px;
-  height: 55%;
-  width: 40%;
-  appearance: none;
-  cursor: pointer;
-  z-index: 2;
-  opacity: 0;
-}
-@media screen and (min-width: 1024px) {
-  .button-wrap input {
-    z-index: -3;
-  }
-}
-.button-wrap input:checked + .btn-primary {
-  transform: scale(1.05);
-  box-shadow: 3px 3px 10px 0 #000000;
-  text-shadow: 6px 1px 20px #000000;
-  background: linear-gradient(160deg, #ff60d3 20%, #a674e2 100%);
-}
-
 .btn-primary {
   background: linear-gradient(160deg, #FF79DA 20%, #9356DC 100%);
   border-radius: 50px;
@@ -98,13 +72,11 @@ a {
   border: transparent;
   transition: transform 0.3s ease-in, box-shadow 0.3s;
 }
-@media screen and (min-width: 1024px) {
-  .btn-primary:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 3px 10px 0 #000000;
-    text-shadow: 6px 1px 20px #000000;
-    background: linear-gradient(160deg, #ff60d3 20%, #a674e2 100%);
-  }
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 10px 0 #000000;
+  text-shadow: 6px 1px 20px #000000;
+  background: linear-gradient(160deg, #ff60d3 20%, #a674e2 100%);
 }
 
 .cards-background {
@@ -682,10 +654,18 @@ footer {
 .container input:checked ~ .container__icon i {
   transform: rotate(360deg);
 }
-.container:hover > .container__icon {
+@media (hover: hover) {
+  .container input[type=checkbox]:hover ~ .container__icon {
+    margin-right: 0rem;
+  }
+  .container input[type=checkbox]:hover ~ .container__icon i {
+    transform: rotate(360deg);
+  }
+}
+.container:hover ~ .container__icon {
   margin-right: 0rem;
 }
-.container:hover > .container__icon i {
+.container:hover ~ .container__icon i {
   transform: rotate(360deg);
 }
 

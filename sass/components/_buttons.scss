@@ -1,25 +1,3 @@
-.button-wrap{
-position: relative;
-  input{
-    position: absolute;
-    right: 30%;
-    bottom: 20px;
-    height: 55%;
-    width: 40%;
-    appearance: none;
-    cursor: pointer;
-    z-index: 2;
-    opacity: 0;
-    @include responsive-laptop{
-      z-index: -3;
-    }
-  }
-  input:checked + .btn-primary{
-    transform: scale(1.05);
-    @include button-shadow-hover;
-    background: $button-gradient-hover;
-  }
-}
 .btn-primary {
   background: $button-gradient;
   border-radius: 50px;
@@ -31,11 +9,9 @@ position: relative;
   transition: transform 0.3s ease-in, box-shadow 0.3s;
 
   &:hover {
-    @include responsive-laptop {
-      transform: scale(1.05);
-      @include button-shadow-hover;
-      background: $button-gradient-hover;
-    }
+    transform: scale(1.05);
+    @include button-shadow-hover;
+    background: $button-gradient-hover;
     //background: linear-gradient(160deg, darken($colour-secondary, 5) 20%, lighten($colour-primary, 7) 100%);
 
   //  &::after {
