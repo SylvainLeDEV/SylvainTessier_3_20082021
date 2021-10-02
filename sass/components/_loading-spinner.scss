@@ -29,17 +29,16 @@ $anim-delay: math.div($anim-dur, $num-letter);
     font-family: 'Bilbo Swash Caps', cursive;
     font-size: 3rem;
     color: black;
+    //Text grandient
+    background: linear-gradient($colour-primary, $colour-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: loading 0.5s ease-in-out 3 both;
     animation-direction: alternate-reverse;
 
     @for $i from 1 through $num-letter {
       &--#{$i} {
         animation-delay: $anim-delay * $i;
-
-        //Text grandient
-        background: linear-gradient($colour-primary, $colour-secondary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
       }
     }
 

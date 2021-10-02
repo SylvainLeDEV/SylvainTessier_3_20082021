@@ -211,56 +211,35 @@ a {
   font-family: "Bilbo Swash Caps", cursive;
   font-size: 3rem;
   color: black;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   animation: loading 0.5s ease-in-out 3 both;
   animation-direction: alternate-reverse;
 }
 .loading__letter--1 {
   animation-delay: 125ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .loading__letter--2 {
   animation-delay: 250ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .loading__letter--3 {
   animation-delay: 375ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .loading__letter--4 {
   animation-delay: 500ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .loading__letter--5 {
   animation-delay: 625ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .loading__letter--6 {
   animation-delay: 750ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .loading__letter--7 {
   animation-delay: 875ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .loading__letter--8 {
   animation-delay: 1000ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .loading__letter--2 {
   padding-right: 5px;
