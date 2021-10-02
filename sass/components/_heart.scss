@@ -26,6 +26,7 @@
     @include heart-gradient;
   }
 
+  //Heart remplie passe devant
   input:checked ~ .fas {
     opacity: 1;
     transition: opacity 0.5s;
