@@ -61,6 +61,10 @@ a {
   color: white;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .btn-primary {
   background: linear-gradient(160deg, #FF79DA 20%, #9356DC 100%);
   border-radius: 50px;
@@ -285,8 +289,14 @@ a {
   align-items: center;
   font-size: 1.2rem;
 }
-.location .location-city h3 {
-  margin-left: 10px;
+.location .location-city input {
+  text-decoration: none;
+  border: none;
+  font-size: 1.2rem;
+  background: transparent;
+  padding-left: 14px;
+  text-align: center;
+  width: 27%;
 }
 
 .research {
@@ -647,10 +657,6 @@ footer {
 }
 .container:hover ~ .container__icon i {
   transform: rotate(360deg);
-}
-
-* {
-  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
